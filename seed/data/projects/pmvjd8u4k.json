@@ -1,0 +1,255 @@
+{
+  "version": 2,
+  "project": {
+    "name": "sudheer",
+    "customer": "constructions",
+    "start": "2026-12-12",
+    "end": "2027-02-04",
+    "budget": 20000,
+    "currency": "EUR",
+    "statusDate": "2026-12-12",
+    "useToday": false,
+    "savedAt": "2026-10-22T09:56:07.176Z",
+    "preparedBy": "HR",
+    "disclosure": {
+      "categories": true,
+      "forecast": false,
+      "risks": true
+    }
+  },
+  "owners": [
+    "Project Management",
+    "Design",
+    "Development",
+    "Testing",
+    "Operations"
+  ],
+  "phases": [
+    {
+      "id": "P1",
+      "name": "Project Initiation"
+    },
+    {
+      "id": "P2",
+      "name": "Requirements Analysis"
+    },
+    {
+      "id": "P3",
+      "name": "Solution Design"
+    },
+    {
+      "id": "P4",
+      "name": "Development"
+    },
+    {
+      "id": "P5",
+      "name": "Testing"
+    },
+    {
+      "id": "P6",
+      "name": "User Training"
+    },
+    {
+      "id": "P7",
+      "name": "Deployment"
+    },
+    {
+      "id": "P8",
+      "name": "Project Closure"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "name": "Kickoff & project charter",
+      "phase": "P1",
+      "owner": "Project Management",
+      "start": "2026-12-12",
+      "end": "2026-12-13",
+      "pct": 0,
+      "pred": "",
+      "cost": 400,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T2",
+      "name": "Stakeholder & communication plan",
+      "phase": "P1",
+      "owner": "Project Management",
+      "start": "2026-12-14",
+      "end": "2026-12-15",
+      "pct": 0,
+      "pred": "T1",
+      "cost": 300,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T3",
+      "name": "Requirements workshops",
+      "phase": "P2",
+      "owner": "Design",
+      "start": "2026-12-16",
+      "end": "2026-12-20",
+      "pct": 0,
+      "pred": "T2",
+      "cost": 1100,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T4",
+      "name": "Requirements sign-off",
+      "phase": "P2",
+      "owner": "Project Management",
+      "start": "2026-12-21",
+      "end": "2026-12-22",
+      "pct": 0,
+      "pred": "T3",
+      "cost": 400,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T5",
+      "name": "Solution architecture",
+      "phase": "P3",
+      "owner": "Design",
+      "start": "2026-12-23",
+      "end": "2026-12-27",
+      "pct": 0,
+      "pred": "T4",
+      "cost": 1300,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T6",
+      "name": "UI/UX design",
+      "phase": "P3",
+      "owner": "Design",
+      "start": "2026-12-28",
+      "end": "2027-01-01",
+      "pct": 0,
+      "pred": "T5",
+      "cost": 1100,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T7",
+      "name": "Build",
+      "phase": "P4",
+      "owner": "Development",
+      "start": "2027-01-02",
+      "end": "2027-01-13",
+      "pct": 0,
+      "pred": "T6",
+      "cost": 6300,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T8",
+      "name": "Integration",
+      "phase": "P4",
+      "owner": "Development",
+      "start": "2027-01-14",
+      "end": "2027-01-20",
+      "pct": 0,
+      "pred": "T7",
+      "cost": 2700,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T9",
+      "name": "System & acceptance testing",
+      "phase": "P5",
+      "owner": "Testing",
+      "start": "2027-01-21",
+      "end": "2027-01-26",
+      "pct": 0,
+      "pred": "T8",
+      "cost": 2700,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T10",
+      "name": "Training materials & sessions",
+      "phase": "P6",
+      "owner": "Operations",
+      "start": "2027-01-27",
+      "end": "2027-01-31",
+      "pct": 0,
+      "pred": "T9",
+      "cost": 1600,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T11",
+      "name": "Deployment & go-live",
+      "phase": "P7",
+      "owner": "Development",
+      "start": "2027-02-01",
+      "end": "2027-02-02",
+      "pct": 0,
+      "pred": "T10",
+      "cost": 1200,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T12",
+      "name": "Lessons learned & closure report",
+      "phase": "P8",
+      "owner": "Project Management",
+      "start": "2027-02-03",
+      "end": "2027-02-04",
+      "pct": 0,
+      "pred": "T11",
+      "cost": 900,
+      "actual": 0,
+      "blocked": false
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Design sign-off",
+      "phase": "P3",
+      "date": "2027-01-01"
+    },
+    {
+      "id": "M2",
+      "name": "System Testing",
+      "phase": "P5",
+      "date": "2027-01-21"
+    },
+    {
+      "id": "M3",
+      "name": "Go-live",
+      "phase": "P7",
+      "date": "2027-02-02"
+    },
+    {
+      "id": "M4",
+      "name": "Project closure",
+      "phase": "P8",
+      "date": "2027-02-04"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-12-12",
+      "actual": 0,
+      "ev": 0,
+      "ac": 0
+    }
+  ],
+  "risks": [],
+  "documents": []
+}

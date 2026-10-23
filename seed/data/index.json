@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "id": "p1",
+      "file": "data/project.json",
+      "name": "Project Performance & Control",
+      "customer": "IB",
+      "start": "2026-10-26",
+      "end": "2026-12-04",
+      "budget": 100000,
+      "currency": "EUR"
+    },
+    {
+      "id": "pmvjd8u4k",
+      "file": "data/projects/pmvjd8u4k.json",
+      "name": "sudheer",
+      "customer": "constructions",
+      "start": "2026-12-12",
+      "end": "2027-02-04",
+      "budget": 20000,
+      "currency": "EUR"
+    }
+  ]
+}

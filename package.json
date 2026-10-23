@@ -1,0 +1,7 @@
+{
+  "name": "project-control",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-customer project performance and control dashboard",
+  "engines": { "node": ">=18" }
+}

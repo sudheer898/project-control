@@ -1,0 +1,388 @@
+{
+  "version": 2,
+  "project": {
+    "name": "Project Performance & Control",
+    "customer": "IB",
+    "start": "2026-10-26",
+    "end": "2026-12-04",
+    "budget": 100000,
+    "currency": "EUR",
+    "statusDate": "2026-11-15",
+    "useToday": false,
+    "savedAt": null,
+    "preparedBy": "",
+    "disclosure": {
+      "categories": true,
+      "forecast": false,
+      "risks": true
+    }
+  },
+  "owners": [
+    "Development",
+    "Testing",
+    "Design",
+    "Project Management",
+    "Operations"
+  ],
+  "phases": [
+    {
+      "id": "P1",
+      "name": "Project Initiation"
+    },
+    {
+      "id": "P2",
+      "name": "Requirements Analysis"
+    },
+    {
+      "id": "P3",
+      "name": "Solution Design"
+    },
+    {
+      "id": "P4",
+      "name": "Development"
+    },
+    {
+      "id": "P5",
+      "name": "Testing"
+    },
+    {
+      "id": "P6",
+      "name": "User Training"
+    },
+    {
+      "id": "P7",
+      "name": "Deployment"
+    },
+    {
+      "id": "P8",
+      "name": "Project Closure"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "name": "Kickoff meeting & project charter",
+      "phase": "P1",
+      "owner": "Project Management",
+      "start": "2026-10-26",
+      "end": "2026-10-27",
+      "pct": 100,
+      "pred": "",
+      "cost": 2000,
+      "actual": 1900,
+      "blocked": false
+    },
+    {
+      "id": "T2",
+      "name": "Stakeholder register & comms plan",
+      "phase": "P1",
+      "owner": "Project Management",
+      "start": "2026-10-27",
+      "end": "2026-10-28",
+      "pct": 100,
+      "pred": "T1",
+      "cost": 1500,
+      "actual": 1400,
+      "blocked": false
+    },
+    {
+      "id": "T3",
+      "name": "Requirements workshops",
+      "phase": "P2",
+      "owner": "Design",
+      "start": "2026-10-29",
+      "end": "2026-11-01",
+      "pct": 100,
+      "pred": "T2",
+      "cost": 5000,
+      "actual": 5200,
+      "blocked": false
+    },
+    {
+      "id": "T4",
+      "name": "Requirements sign-off",
+      "phase": "P2",
+      "owner": "Project Management",
+      "start": "2026-11-02",
+      "end": "2026-11-04",
+      "pct": 60,
+      "pred": "T3",
+      "cost": 2500,
+      "actual": 1600,
+      "blocked": false
+    },
+    {
+      "id": "T5",
+      "name": "Solution architecture",
+      "phase": "P3",
+      "owner": "Design",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "pct": 100,
+      "pred": "T3",
+      "cost": 6000,
+      "actual": 5700,
+      "blocked": false
+    },
+    {
+      "id": "T6",
+      "name": "UI/UX design",
+      "phase": "P3",
+      "owner": "Design",
+      "start": "2026-11-05",
+      "end": "2026-11-09",
+      "pct": 100,
+      "pred": "T3",
+      "cost": 5500,
+      "actual": 5300,
+      "blocked": false
+    },
+    {
+      "id": "T7",
+      "name": "Data model design",
+      "phase": "P3",
+      "owner": "Design",
+      "start": "2026-11-08",
+      "end": "2026-11-11",
+      "pct": 100,
+      "pred": "T5",
+      "cost": 4000,
+      "actual": 3900,
+      "blocked": false
+    },
+    {
+      "id": "T8",
+      "name": "Backend development",
+      "phase": "P4",
+      "owner": "Development",
+      "start": "2026-11-12",
+      "end": "2026-11-21",
+      "pct": 40,
+      "pred": "T7",
+      "cost": 16000,
+      "actual": 6100,
+      "blocked": false
+    },
+    {
+      "id": "T9",
+      "name": "Frontend development",
+      "phase": "P4",
+      "owner": "Development",
+      "start": "2026-11-12",
+      "end": "2026-11-22",
+      "pct": 35,
+      "pred": "T6",
+      "cost": 14000,
+      "actual": 4600,
+      "blocked": false
+    },
+    {
+      "id": "T10",
+      "name": "Integration & APIs",
+      "phase": "P4",
+      "owner": "Development",
+      "start": "2026-11-14",
+      "end": "2026-11-24",
+      "pct": 15,
+      "pred": "T8",
+      "cost": 10000,
+      "actual": 1500,
+      "blocked": false
+    },
+    {
+      "id": "T11",
+      "name": "Test environment & test cases",
+      "phase": "P4",
+      "owner": "Testing",
+      "start": "2026-11-13",
+      "end": "2026-11-24",
+      "pct": 30,
+      "pred": "T4",
+      "cost": 6000,
+      "actual": 1700,
+      "blocked": false
+    },
+    {
+      "id": "T12",
+      "name": "Training materials",
+      "phase": "P6",
+      "owner": "Operations",
+      "start": "2026-11-14",
+      "end": "2026-12-01",
+      "pct": 20,
+      "pred": "T6",
+      "cost": 7000,
+      "actual": 1100,
+      "blocked": false
+    },
+    {
+      "id": "T13",
+      "name": "System & acceptance testing",
+      "phase": "P5",
+      "owner": "Testing",
+      "start": "2026-11-25",
+      "end": "2026-11-28",
+      "pct": 0,
+      "pred": "T10",
+      "cost": 12000,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T14",
+      "name": "Deployment & go-live",
+      "phase": "P7",
+      "owner": "Development",
+      "start": "2026-12-02",
+      "end": "2026-12-03",
+      "pct": 0,
+      "pred": "T13",
+      "cost": 5500,
+      "actual": 0,
+      "blocked": false
+    },
+    {
+      "id": "T15",
+      "name": "Lessons learned & closure report",
+      "phase": "P8",
+      "owner": "Project Management",
+      "start": "2026-12-04",
+      "end": "2026-12-04",
+      "pct": 0,
+      "pred": "T14",
+      "cost": 3000,
+      "actual": 0,
+      "blocked": false
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Design sign-off",
+      "date": "2026-11-11",
+      "phase": "P3"
+    },
+    {
+      "id": "M2",
+      "name": "System Testing",
+      "date": "2026-11-25",
+      "phase": "P5"
+    },
+    {
+      "id": "M3",
+      "name": "Go-live",
+      "date": "2026-12-03",
+      "phase": "P7"
+    },
+    {
+      "id": "M4",
+      "name": "Project closure",
+      "date": "2026-12-04",
+      "phase": "P8"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-10-26",
+      "actual": 0,
+      "ev": 0,
+      "ac": 0
+    },
+    {
+      "date": "2026-11-02",
+      "actual": 9,
+      "ev": 8200,
+      "ac": 8300
+    },
+    {
+      "date": "2026-11-09",
+      "actual": 22,
+      "ev": 21500,
+      "ac": 20800
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "kind": "Issue",
+      "title": "Requirements sign-off is overdue",
+      "probability": "High",
+      "impact": "Medium",
+      "owner": "Project Management",
+      "status": "Open",
+      "action": "Escalate to the IB sponsor and book a sign-off session this week.",
+      "customer": true
+    },
+    {
+      "id": "R2",
+      "kind": "Risk",
+      "title": "IB system APIs delivered late",
+      "probability": "Medium",
+      "impact": "High",
+      "owner": "Development",
+      "status": "Mitigating",
+      "action": "Weekly integration sync with IB IT; build against mock APIs meanwhile.",
+      "customer": true
+    },
+    {
+      "id": "R3",
+      "kind": "Risk",
+      "title": "Test environment not ready for 25 Nov",
+      "probability": "Medium",
+      "impact": "Medium",
+      "owner": "Testing",
+      "status": "Open",
+      "action": "Confirm environment booking by 18 Nov; keep a cloud fallback.",
+      "customer": true
+    },
+    {
+      "id": "R4",
+      "kind": "Risk",
+      "title": "Key users unavailable for December training",
+      "probability": "Low",
+      "impact": "Medium",
+      "owner": "Operations",
+      "status": "Open",
+      "action": "Schedule sessions now and record them for catch-up.",
+      "customer": false
+    }
+  ],
+  "documents": [
+    {
+      "id": "D1",
+      "name": "Project charter",
+      "type": "PDF",
+      "owner": "Project Management",
+      "updated": "2026-10-27",
+      "url": "",
+      "customer": true
+    },
+    {
+      "id": "D2",
+      "name": "Requirements specification",
+      "type": "Word",
+      "owner": "Design",
+      "updated": "2026-11-04",
+      "url": "",
+      "customer": true
+    },
+    {
+      "id": "D3",
+      "name": "Solution design",
+      "type": "Word",
+      "owner": "Design",
+      "updated": "2026-11-11",
+      "url": "",
+      "customer": false
+    },
+    {
+      "id": "D4",
+      "name": "Test plan",
+      "type": "Excel",
+      "owner": "Testing",
+      "updated": "2026-11-14",
+      "url": "",
+      "customer": false
+    }
+  ]
+}
